@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Red Container</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #red-container {
+            width: 200px;
+            /* Width of the container */
+            height: 100px;
+            /* Height of the container */
+            background-color: rgb(190, 18, 18);
+            /* Red background color */
+            position: fixed;
+            /* Fixed position */
+            top: 50px;
+            /* Position from the top */
+            left: -220px;
+            /* Start outside the viewport */
+            transition: left 2s;
+            /* Smooth transition effect */
+        }
+
+        #red-container.visible {
+            left: 0;
+            /* Move into the viewport */
+        }
+
+        .hidden {
+            display: none;
+            /* Initially hidden */
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button" onclick="showContainer()">Click Me</button>
+    <div id="red-container" class="hidden"></div>
+
+    <!-- JavaScript Function -->
+    <script>
+        function showContainer() {
+            let container = document.getElementById('red-container');
+            container.classList.remove('hidden');
+            setTimeout(function () {
+                container.classList.add('visible');
+            }, 10); // Adding a slight delay to trigger the transition
+        }
+    </script>
+</body>
+
+</html>
