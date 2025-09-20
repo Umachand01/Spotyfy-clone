@@ -1,0 +1,9 @@
+.border{
+    border: 2px solid rgb(0, 0, 0);
+}
+.justify{
+    justify-content: center;
+}
+.aline-item{
+    align-items: center;
+}

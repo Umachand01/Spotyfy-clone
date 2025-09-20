@@ -1,0 +1,1048 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.container {
+    display: flex;
+}
+
+.nav {
+    width: 100%;
+    height: 3.5em;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 8vw 5vw 8vw 12vw 8vw 8vw 12vw;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.logo {
+    margin-top: 0.4em;
+    margin-left: 10px;
+    filter: invert(1);
+}
+
+.home {
+    margin-top: 0.4em;
+    margin-left: 30vw;
+    filter: invert(1);
+    background-color: rgb(179, 179, 179);
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.box {
+    margin-top: 0.4em;
+    position: relative;
+    width: 38vw;
+    height: 45px;
+    left: 95px;
+    border-radius: 20px;
+    z-index: 10;
+    background-color: rgb(77, 75, 75);
+    border: none;
+}
+
+.search {
+    margin-top: 0.4em;
+    position: relative;
+    left: 90px;
+    z-index: 50;
+}
+
+input {
+    margin-top: 0.4em;
+    border: none;
+    width: 25vw;
+    height: 2vh;
+    padding: 15px;
+    right: 160px;
+    position: relative;
+    background-color: rgb(77, 75, 75);
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.signup {
+    margin-top: 0.4em;
+    margin-left: 15vw;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 0.4em;
+    background-color: white;
+    border: none;
+    white-space: nowrap;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    padding: 6px;
+    width: 7vw;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+.left {
+    width: 35vw;
+    height: 480px;
+    border-radius: 6px;
+    background-color: rgb(22, 22, 22);
+    position: sticky;
+    top: 9vh;
+}
+
+
+.library {
+    font-size: 16px;
+    font-weight: 700;
+    width: 34vw;
+    display: grid;
+    grid-template-columns: 7fr 13fr 34fr;
+    align-content: space-between;
+    justify-content: start;
+    align-items: center;
+    justify-items: end;
+    background-color: rgb(234, 234, 234);
+    filter: invert(1);
+    border: none;
+}
+
+.library.p {
+    color: rgb(61, 61, 61);
+}
+
+.library .plus {
+    grid-column: 5;
+    cursor: pointer;
+}
+
+.scroll-space {
+    background-color: rgb(22, 22, 22);
+    height: 30vh;
+    width: 33.5vw;
+    margin: auto;
+    margin-top: 6.5vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scroll-space:hover {
+    overflow-y: scroll;
+}
+
+.scroll-space .con1 {
+    height: 20vh;
+    width: 33vw;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    margin: auto;
+    top: 5px;
+    border-radius: 6px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:gray;
+    border-radius: 3px;
+    border: 3px solid #333;
+}
+
+.scroll-space .con1,
+.con2 {
+    color: white;
+}
+
+.scroll-space .h4 {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 0px 0px 15px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.scroll-space .p1 {
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 0px 0px 0px 15px;
+    margin-top: -10px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.scroll-space .create {
+    padding: 9px 15px 9px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    cursor: pointer;
+    color: rgb(14, 14, 14);
+    font-weight: 800;
+}
+
+.scroll-space .create:hover {
+    background-color: rgb(221, 221, 221);
+    transition: all 300ms ease-out;
+    font-size: 13.5px;
+    padding: 9px 16px 9px 16px;
+
+}
+
+.scroll-space .create:hover::-webkit-scrollbar {
+    display: -webkit-box;
+}
+
+.scroll-space .con2 {
+    height: 20vh;
+    width: 33vw;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    margin: auto;
+    top: 4vh;
+    border-radius: 6px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 5vw 10vw 8vw 5vw;
+    grid-template-rows: 5vh 5vh 5vh;
+    justify-content: start;
+    align-items: start;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(153, 150, 150);
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    white-space: nowrap;
+    font-size: 12px;
+    position: relative;
+    top: 6vh;
+    left: 2vw;
+}
+
+.cookies {
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 14px;
+    top: 1vh;
+    left: 2vw;
+    text-decoration: none;
+}
+
+.cookies:hover {
+    text-decoration: underline;
+}
+
+.english {
+    color: white;
+    background-color: rgb(41, 40, 40);
+    position: relative;
+    padding: 5px 15px 7px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    top: 8vh;
+    left: -1.5vw;
+}
+
+.right {
+    width: 63.7vw;
+    height: 350vh;
+    border-radius: 6px;
+    position: sticky;
+    top: 19px;
+    background-color: rgb(22, 22, 22);
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.ancer {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 10px 0px 20px;
+}
+
+.ancer a {
+    text-decoration: none;
+    color: white;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+}
+
+.ancer a:hover {
+    text-decoration: underline;
+}
+
+.ancer .a1 {
+    margin-top: 5vh;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ancer .a2 {
+    margin-top: 5vh;
+    margin-right: 1.6em;
+}
+
+.right .popular {
+    display: flex;
+}
+
+.right .popular .frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    width: 13vw;
+}
+
+.right .popular img {
+    border-radius: 100vw;
+    margin: 2vw 0px 0px 10px;
+}
+
+.right .popular .frame p {
+    color: rgb(167, 166, 166);
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.right .popular .frame .name {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+    margin-left: 10px;
+}
+
+.right .popular .frame:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.right .popular .frame a:hover {
+    text-decoration: underline;
+}
+
+.right .albums {
+    display: flex;
+}
+
+.right .albums .frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    width: 13vw;
+}
+
+.right .albums img {
+    border-radius: 7px;
+    margin: 2vw 0px 0px 10px;
+}
+
+.right .albums .frame p .singer {
+    color: rgb(167, 166, 166);
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: none;
+    margin-left: 10px;
+    position: relative;
+    top: -13px;
+}
+
+.right .albums .frame p .sin {
+    margin-left: 2px;
+}
+
+.right .albums .frame p .singer2 {
+    position: relative;
+    top: -25px;
+}
+
+.right .albums .frame p {
+    margin-bottom: 50xp;
+}
+
+.right .albums .frame .singer:hover {
+    text-decoration: underline;
+}
+
+.right .albums .frame .name {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+    margin-left: 10px;
+}
+
+.right .albums .frame:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+.right .albums .frame a:hover {
+    text-decoration: underline;
+}
+
+
+
+.right .radio {
+    display: flex;
+}
+
+.right .radio .frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    width: 13vw;
+}
+
+.right .radio img {
+    border-radius: 7px;
+    margin: 2vw 0px 0px 10px;
+}
+
+.right .radio .frame p {
+    color: rgb(167, 166, 166);
+    margin-left: 10px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 14px;
+}
+
+.right .radio .frame p:nth-child(4) {
+ margin-bottom: 30px;
+}
+
+.right .radio .frame .name {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+    margin-left: 10px;
+}
+
+.right .radio .frame:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+
+.right .charts {
+    display: flex;
+}
+
+.right .charts .frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    width: 13vw;
+}
+
+.right .charts img {
+    border-radius: 7px;
+    margin: 2vw 0px 0px 10px;
+}
+
+.right .charts .frame p {
+    color: rgb(167, 166, 166);
+    margin-left: 10px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.right .charts .frame p:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.right .radio .frame .name {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+    margin-left: 10px;
+}
+
+.right .charts .frame:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+
+
+
+.right .best {
+    display: flex;
+}
+
+.right .best .frame1,
+.frame2,
+.frame3,
+.frame4,
+.frame5 {
+    width: 13vw;
+}
+
+.right .best img {
+    border-radius: 7px;
+    margin: 2vw 0px 0px 10px;
+}
+
+.right .best .frame p {
+    color: rgb(167, 166, 166);
+    margin-left: 10px;
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.right .best .frame p:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.right .best .frame .name {
+    font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    text-decoration: none;
+    color: white;
+    font-size: 1.08em;
+    margin-left: 10px;
+}
+
+.right .best .frame:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+
+.recruter {
+    display: flex;
+}
+
+.Company ul {
+    margin-top: 12vh;
+}
+
+.Company ul li {
+    padding-bottom: 15px;
+    margin-left: -20px;
+    color: rgb(223, 223, 223);
+    list-style: none;
+    font-weight: 700;
+    font-size: 0.98em;
+    margin-right: 5.5vw;
+}
+
+.Company ul li .about {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-size: 0.98em;
+}
+
+
+.Communities ul {
+    margin-top: 12vh;
+    margin-left: -35px;
+}
+
+.Communities ul li {
+    padding-bottom: 15px;
+    margin-left: -20px;
+    color: rgb(223, 223, 223);
+    list-style: none;
+    font-weight: 700;
+    font-size: 0.98em;
+    margin-right: 5.5vw;
+}
+
+.Communities ul li .about {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-size: 0.98em;
+}
+
+
+.Useful_links ul {
+    margin-top: 12vh;
+    margin-left: -35px;
+}
+
+.Useful_links ul li {
+    padding-bottom: 15px;
+    margin-left: -20px;
+    color: rgb(223, 223, 223);
+    list-style: none;
+    font-weight: 700;
+    font-size: 0.98em;
+    margin-right: 5.5vw;
+}
+
+.Useful_links ul li .about {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-size: 0.98em;
+}
+
+
+.Spotify-plans ul {
+    margin-top: 12vh;
+    margin-left: -35px;
+}
+
+.Spotify-plans ul li {
+    padding-bottom: 15px;
+    margin-left: -20px;
+    color: rgb(223, 223, 223);
+    list-style: none;
+    font-weight: 700;
+    font-size: 0.98em;
+    margin-right: 5.5vw;
+}
+
+.Spotify-plans ul li .about {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    font-size: 0.98em;
+}
+
+.recruter ul li a:hover {
+    text-decoration: underline;
+}
+
+.social img {
+    padding: 6px;
+    background-color: rgb(73, 72, 72);
+    border-radius: 50px;
+    margin: 0px 8px 0px 8px;
+    position: relative;
+    left: 49vw;
+    bottom: 18vw;
+}
+
+.social img:hover {
+    background-color: rgb(196, 192, 192);
+}
+
+.line {
+    background-color: rgb(49, 48, 48);
+    width: 58vw;
+    height: 1px;
+    margin: -6vh 3vw 0vw 3vw;
+}
+
+.end {
+    color: rgb(173, 173, 173);
+    margin: 3vw 0px 0px 3vw;
+    font-size: 14px;
+}
+
+/* hidden button1 */
+.right .frame1 .play1 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 72px;
+    left: 6.2vw;
+    cursor: pointer;
+}
+/* hidden button2 */
+.right .frame2 .play1 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 72px;
+    left: 19vw;
+    cursor: pointer;
+}
+/* hidden button3 */
+.right .frame3 .play1 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 72px;
+    left: 31.5vw;
+    cursor: pointer;
+}
+/* hidden button4 */
+.right .frame4 .play1 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+    margin-top: 72px;
+    left: 44.5vw;
+    cursor: pointer;
+}
+/* hidden button5 */
+.right .frame5 .play1 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 72px;
+    left: 57vw;
+    cursor: pointer;
+}
+
+.right .popular, .frame .play1:hover {
+    filter: brightness(1.5);
+}
+.right .popular, .frame:hover .play1{
+    opacity: 1;
+}
+
+
+
+/* hidden button1 */
+.right .frame1 .play2 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 6.2vw;
+    cursor: pointer;
+}
+/* hidden button2 */
+.right .frame2 .play2 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 19.4vw;
+    cursor: pointer;
+}
+/* hidden button3 */
+.right .frame3 .play2 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 32.2vw;
+    cursor: pointer;
+}
+/* hidden button4 */
+.right .frame4 .play2 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 45.2vw;
+    cursor: pointer;
+}
+/* hidden button5 */
+.right .frame5 .play2 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 58.2vw;
+    cursor: pointer;
+}
+.right .albums .frame .play2:hover {
+    filter: brightness(1.5);
+}
+.right .albums .frame:hover .play2{
+    opacity: 1;
+}
+
+
+
+/* hidden button1 */
+.right .frame1 .play3 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 6.2vw;
+    cursor: pointer;
+}
+/* hidden button2 */
+.right .frame2 .play3 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 19.4vw;
+    cursor: pointer;
+}
+/* hidden button3 */
+.right .frame3 .play3 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 32.2vw;
+    cursor: pointer;
+}
+/* hidden button4 */
+.right .frame4 .play3 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 45.2vw;
+    cursor: pointer;
+}
+/* hidden button5 */
+.right .frame5 .play3 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 58.2vw;
+    cursor: pointer;
+}
+.right .radio .frame .play3:hover {
+    filter: brightness(1.5);
+}
+.right .radio .frame:hover .play3{
+    opacity: 1;
+}
+
+
+
+/* hidden button1 */
+.right .frame1 .play4 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 6.2vw;
+    cursor: pointer;
+}
+/* hidden button2 */
+.right .frame2 .play4 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 19.4vw;
+    cursor: pointer;
+}
+/* hidden button3 */
+.right .frame3 .play4 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 32.2vw;
+    cursor: pointer;
+}
+/* hidden button4 */
+.right .frame4 .play4 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 45.2vw;
+    cursor: pointer;
+}
+/* hidden button5 */
+.right .frame5 .play4 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 58.2vw;
+    cursor: pointer;
+}
+.right .charts .frame .play4:hover {
+    filter: brightness(1.5);
+}
+.right .charts .frame:hover .play4{
+    opacity: 1;
+}
+
+
+
+
+/* hidden button1 */
+.right .frame1 .play5 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 6.2vw;
+    cursor: pointer;
+}
+/* hidden button2 */
+.right .frame2 .play5 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 19.4vw;
+    cursor: pointer;
+}
+/* hidden button3 */
+.right .frame3 .play5 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 32.2vw;
+    cursor: pointer;
+}
+/* hidden button4 */
+.right .frame4 .play5 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 45.2vw;
+    cursor: pointer;
+}
+/* hidden button5 */
+.right .frame5 .play5 {
+    opacity: 0;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 90px;
+    left: 58.2vw;
+    cursor: pointer;
+}
+.right .best .frame .play5:hover {
+    filter: brightness(1.5);
+}
+.right .best .frame:hover .play5{
+    opacity: 1;
+}
+
+
+#red-container{
+    position: relative;
+    top: 13.5vh;
+    height: 70px;
+    width: 35vw;
+    margin-left: 2px;
+    border-radius: 10px;
+    background-color: rgba(255, 217, 0, 0.616);
+    transition: bottom 12s ease-out;
+}
+.playbutton{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+.playbutton >*:hover{
+    background-color: #0000007c;
+    cursor: pointer;
+} 
+#play-pause-button:hover{
+    background-color: #0000007c;
+}
+#play-pause-button{
+    background: none;
+    border: none;
+
+}
+#seek-bar{
+    margin-left: 15vw; 
+    padding: 0px;
+}

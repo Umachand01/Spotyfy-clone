@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="logo.svg" alt="logo">
+        <img class="home" src="home.svg" alt="home">
+        <img class="search invert" src="search.svg" alt="search">
+        <div class="box"></div>
+        <input type="text" placeholder="What do you want to play?">
+        <button class="signup">sign up</button>
+        <button class="login">Log in</button>
+    </div>
+    <div class="container">
+        <div class="left border">
+            <button class="library">
+                <img src="playlist.svg" alt="pimglaylist">
+                <p style="white-space: nowrap;" class="p">YourLibrary</p>
+                <img class="plus" src="+.svg" alt="+">
+            </button>
+            <div class="scroll-space">
+                <div class="con1">
+                    <h4 class="h4">Create Your First Playlist</h4>
+                    <p class="p1">its easy,we'll help you</p>
+                    <button class="create">Create playlist</button>
+                </div>
+                <div class="con2">
+                    <h4 class="h4">Let's find some podcast to follow</h4>
+                    <p class="p1">We'll keep you updated on new episodes</p>
+                    <button class="create">Browese podcasts</button>
+                </div>
+            </div>
+            <div class="links">
+                <a href="">Legal</a>
+                <a href="">Sefty&PrivacyCenter</a>
+                <a href="">Pravacy polacy</a>
+                <a href="">cookes</a>
+                <a href="">about Ads</a>
+                <a href="">Accessibility</a>
+            </div>
+            <a class="cookies" href="">Cookes</a>
+            <button class="english">🌐 English</button>
+            <div class="playbar" id="red-container">
+                <div class="playinfo"></div>
+                <input type="range" id="seek-bar" value="0" minlength="0">
+                <div class="playbutton">
+                    <img src="prevsong.svg" alt="">
+                    <button id="play-pause-button"><img onclick="playMusic()" src="play.svg"alt="Play"></button>
+                    <img src="nextsong.svg" alt="">
+                </div>
+                <div class="playtime"></div>
+            </div>
+        </div>
+
+        <section class="right border">
+            <div class="ancer">
+                <a class="a1 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">Popular artists</a>
+                <a class="a2 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">show all</a>
+            </div>
+            <div class="popular">
+                <div class="frame frame1">
+                    <img width="150" height="150" src="pritam.jpg" alt="pritam">
+                    <button class="play1" id="hiddenbutton1" onclick=playMusic()><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <audio class="audio" id="audio-player" src="music-folder/1.MP4">play now</audio>
+                    <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU" class="name">Pritam</a>
+                    <p>Artist</p>
+                </div>
+
+                <div class="frame frame2">
+                    <img width="150" height="150" src="arjit singh.jpg" alt="">
+                    <button class="play1" id="hiddenbutton2"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw" class="name">Arjit singh</a>
+                    <p>Artist</p>
+                </div>
+
+                <div class="frame frame3">
+                    <img width="150" height="150" src="schin jigar.webp" alt="img">
+                    <button class="play1" id="hiddenbutton3"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO" class="name">Sachin-jager</a>
+                    <p>Artist</p>
+                </div>
+                <div class="frame frame4">
+                    <img width="150" height="150" src="a r rahman.jpg" alt="img">
+                    <button class="play1" id="hiddenbutton4"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG" class="name">A.R.Rahman</a>
+                    <p>Artist</p>
+                </div>
+                <div class="frame frame5">
+                    <img width="150" height="150" src="vishal sikhar.jpg" alt="img">
+                    <button class="play1" id="hiddenbutton5"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb" class="name">Vishal Shekher</a>
+                    <p>Artist</p>
+                </div>
+            </div>
+
+
+            <div class="ancer">
+                <a class="a1 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">Popular albums and
+                    singles</a>
+                <a class="a2 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">show all</a>
+            </div>
+            <div class="albums">
+                <div class="frame frame1">
+                    <img width="150" height="150" src="Glory.jpg" alt="img">
+                    <button class="play2" id="hiddenbutton6"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/album/5KF4xCxDD8ip003hoatFT9" class="name">Glory</a>
+                    <p><a class="singer" href="">Yo Yo Hunny Singh</a></p>
+                </div>
+
+                <div class="frame frame2">
+                    <img width="150" height="150" src="Aashaqui 2.jpg" alt="img">
+                    <button class="play2" id="hiddenbutton7"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/album/0Rkv5iqjF2uenfL0OVB8hg" class="name">Aashiqui 2</a>
+                    <p><a class="singer" href="">Mithoon,</a><a class="singer sin" href="">Ankit Tiwari,</a></p>
+                    <p><a class="singer singer2" href="">Jeet Gannguli</a></p>
+                </div>
+
+                <div class="frame frame3">
+                    <img width="150" height="150" src="AA jawani hai diwani.jpg" alt="img">
+                    <button class="play2" id="hiddenbutton8"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/album/2Lxoc72vRTGdQfMvj7Ovi1" class="name name003">Yea jawaani hai
+                        Deewani</a>
+                    <p><a class="singer" href="">Pritam</a></p>
+                </div>
+                <div class="frame frame4">
+                    <img width="150" height="150" src="who(remixes).jpg" alt="img">
+                    <button class="play2" id="hiddenbutton9"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/album/7KIwUrSiA0gc9WlI7AYIfZ" class="name">Who (Remixes)</a>
+                    <p><a class="singer" href="">Jimil</a></p>
+                </div>
+                <div class="frame frame5">
+                    <img width="150" height="150" src="making memories.jpg" alt="img">
+                    <button class="play2" id="hiddenbutton10"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <a href="https://open.spotify.com/album/3BGU0BqGwBkYDHpfCWFm7I" class="name">Making Mamories</a>
+                    <p><a class="singer" href="">Karan Aujla,</a><a class="singer sin" href="">Lkky</a></p>
+                </div>
+            </div>
+
+            <div class="ancer">
+                <a class="a1 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">Popular radio</a>
+                <a class="a2 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">show all</a>
+            </div>
+            <div class="radio">
+                <div class="frame frame1">
+                    <img width="150" height="150" src="popular radia arjit singh.jpg" alt="img">
+                    <button class="play3" id="hiddenbutton11"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>With Sachin-jager,</p>
+                    <p>Vishal-Shekher,Atif...</p>
+                </div>
+
+                <div class="frame frame2">
+                    <img width="150" height="150" src="popular radio shreya ghoshal.jpg" alt="img">
+                    <button class="play3" id="hiddenbutton12"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>With A.R.Rahman,</p>
+                    <p>Vishal-Shekher,Atif...</p>
+                </div>
+
+                <div class="frame frame3">
+                    <img width="150" height="150" src="popular radio diljit.jpg" alt="img">
+                    <button class="play3" id="hiddenbutton13"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>With Karan Aujla,</p>
+                    <p>Subha,AP Dhllon an...</p>
+                </div>
+                <div class="frame frame4">
+                    <img width="150" height="150" src="popular radio a.r. rahman.jpg" alt="img">
+                    <button class="play3" id="hiddenbutton14"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>With Anirudh</p>
+                    <p>Ravichandar,...</p>
+                </div>
+                <div class="frame frame5">
+                    <img width="150" height="150" src="popular radio kk.jpg" alt="img">
+                    <button class="play3" id="hiddenbutton15"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>With Armaan Malik,</p>
+                    <p>Mohit Chauhan,...</p>
+                </div>
+            </div>
+
+
+            <div class="ancer">
+                <a class="a1 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">Futured Charts</a>
+                <a class="a2 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">show all</a>
+            </div>
+            <div class="charts">
+                <div class="frame frame1">
+                    <img width="150" height="150" src="top song global.jpg" alt="img">
+                    <button class="play4" id="hiddenbutton16"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Your Weekly update of</p>
+                    <p>The most played...</p>
+                </div>
+
+                <div class="frame frame2">
+                    <img width="150" height="150" src="top song india.png" alt="img">
+                    <button class="play4" id="hiddenbutton17"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Your Weekly update of</p>
+                    <p>The most played...</p>
+                </div>
+
+                <div class="frame frame3">
+                    <img width="150" height="150" src="top 50 global.jpg" alt="img">
+                    <button class="play4" id="hiddenbutton18"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Your Weekly update of</p>
+                    <p>The most played...</p>
+                </div>
+                <div class="frame frame4">
+                    <img width="150" height="150" src="top 50 india.jpg" alt="img">
+                    <button class="play4" id="hiddenbutton19"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Your Weekly update of</p>
+                    <p>The most played...</p>
+                </div>
+                <div class="frame frame5">
+                    <img width="150" height="150" src="viral 50 global.jpg" alt="img">
+                    <button class="play4" id="hiddenbutton20"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Your Weekly update of</p>
+                    <p>The most viral tracks...</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="ancer">
+                <a class="a1 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">India's best</a>
+                <a class="a2 a" href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">show all</a>
+            </div>
+            <div class="best">
+                <div class="frame frame1">
+                    <img width="150" height="150" src="i-pop icons.jpg" alt="img">
+                    <button class="play5" id="hiddenbutton21"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Hottest track from</p>
+                    <p>your favourate i-pop...</p>
+                </div>
+
+                <div class="frame frame2">
+                    <img width="150" height="150" src="bollywood central.jpg" alt="img">
+                    <button class="play5" id="hiddenbutton22"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Bollywood Centeral</p>
+                    <p>Jab baje tao sidha ...</p>
+                </div>
+
+                <div class="frame frame3">
+                    <img width="150" height="150" src="panjabi 101.jpg" alt="img">
+                    <button class="play5" id="hiddenbutton23"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Unlimited 101 Panjabi</p>
+                    <p>Hits with Karan Aujla</p>
+                </div>
+                <div class="frame frame4">
+                    <img width="150" height="150" src="radar india.jpg" alt="img">
+                    <button class="play5" id="hiddenbutton24"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Most excerting Artiest</p>
+                    <p>From the Indian Indie...</p>
+                </div>
+                <div class="frame frame5">
+                    <img width="150" height="150" src="kollywood cream.jpg" alt="img">
+                    <button class="play5" id="hiddenbutton25"><img src="cropped_image.png" width="50"
+                            alt="play"></button>
+                    <p>Finest collection of</p>
+                    <p>Tamil Music from the...</p>
+                </div>
+            </div>
+
+            <div class="recruter">
+                <div class="Company">
+                    <ul>
+                        <li>Company</li>
+                        <li><a class="about" href="">About</a></li>
+                        <li><a class="about" href="">jobs</a></li>
+                        <li><a class="about" href="">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="Communities">
+                    <ul>
+                        <li>Communities</li>
+                        <li><a class="about" href="">For Artiest</a></li>
+                        <li><a class="about" href="">Devlopers</a></li>
+                        <li><a class="about" href="">Advatising</a></li>
+                        <li><a class="about" href="">Invester</a></li>
+                        <li><a class="about" href="">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="Useful_links">
+                    <ul>
+                        <li>Useful links</li>
+                        <li><a class="about" href="">Support</a></li>
+                        <li><a class="about" href="">Free Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="Spotify-plans">
+                    <ul>
+                        <li>Spotify plans</li>
+                        <li><a class="about" href="">Premium</a></li>
+                        <li><a class="about" href="">Individual</a></li>
+                        <li><a class="about" href="">Premium Deo</a></li>
+                        <li><a class="about" href="">Premium Family</a></li>
+                        <li><a class="about" href="">Premium Student</a></li>
+                        <li><a class="about" href="">Spotify Free</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/umachandmandal/"><img src="instagram-removebg-preview.png" width="30"
+                        height="30" alt="social media"></a>
+                <a href="https://www.twitter.com/umachandmandal/"> <img src="twitter-removebg-preview.png" width="30"
+                        height="30" alt="social media"></a>
+                <a href="https://www.facebook.com/Umachandmandal"><img src="images-removebg-preview.png" width="30"
+                        height="30" alt="social media"></a>
+            </div>
+            <div class="line"></div>
+            <div class="end">© 2025 Spotify AB</div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
